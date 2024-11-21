@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Revisión de Camioneta</title>
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+        form {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        }
+        label {
+            font-size: 1.1em;
+            color: #FFD700;
+            display: block;
+            margin-top: 15px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            background-color: #FFD700;
+            border: none;
+            padding: 15px 30px;
+            color: black;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #FFC107;
+        }
+        h1 {
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="logodesign.jpg" alt="Design Soluciones de Ingeniería" class="logo">
+    <h1>Formulario de Revisión</h1>
+    <form action="guardar_reporte.php" method="post">
+        <label for="estado_luces">Estado de las luces:</label>
+        <select id="estado_luces" name="estado_luces">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
 
+        <label for="estado_frenos">Estado de los frenos:</label>
+        <select id="estado_frenos" name="estado_frenos">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <label for="estado_neumaticos">Estado de los neumáticos:</label>
+        <select id="estado_neumaticos" name="estado_neumaticos">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <label for="estado_suspension">Estado de la suspensión:</label>
+        <select id="estado_suspension" name="estado_suspension">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <label for="estado_motor">Estado del motor:</label>
+        <select id="estado_motor" name="estado_motor">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <label for="estado_caja">Estado de la caja de cambios:</label>
+        <select id="estado_caja" name="estado_caja">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <label for="estado_direccion">Estado de la dirección:</label>
+        <select id="estado_direccion" name="estado_direccion">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <label for="estado_bateria">Estado de la batería:</label>
+        <select id="estado_bateria" name="estado_bateria">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <label for="estado_cinturones">Estado de los cinturones de seguridad:</label>
+        <select id="estado_cinturones" name="estado_cinturones">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <label for="estado_extintor">Estado del extintor:</label>
+        <select id="estado_extintor" name="estado_extintor">
+            <option value="BUENO">BUENO</option>
+            <option value="ESTÁNDAR">ESTÁNDAR</option>
+            <option value="MALO">MALO</option>
+        </select>
+
+        <input type="submit" value="Enviar reporte">
+    </form>
+</body>
+</html>
